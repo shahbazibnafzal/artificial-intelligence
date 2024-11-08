@@ -76,9 +76,11 @@ import pandas as pd # Used to import and perform actions on the datasets.
 import matplotlib.pyplot as plt # Used to plot charts for data vizualization.
 ```
 
-### Importing the dataset
+### Importing the dataset and defining the dependent and independant variables
 
 ```python
-dataset = pd.read_csv("Data.csv") # Reading the csv file with pandas
+dataset = pd.read_csv("Data.csv") # Reading the csv file with pandas and storing it as a dataframe
 print(dataset) # This will print the dataset
+X = dataset.iloc[:, :-1].values # Storing all the values of independant variables
+Y = dataset.iloc[:, -1].values # Storing all the values of the dependant or target variable
 ```
