@@ -76,6 +76,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt 
 ```
-> numpy is used to perform array operations
-> pandas is used o import and perform actions on the datasets
-> matplotlib.pyplot is used to plot charts for data vizualization
+> 1. numpy is used to perform array operations,
+> 2. pandas is used o import and perform actions on the datasets,
+> 3. matplotlib.pyplot is used to plot charts for data vizualization,
