@@ -57,11 +57,25 @@ Each value in the column is calculated this way, so the values will be between -
 
 ## Data preprocessing template
 
-There are a few steps that we always need to perform.
+There are a few steps that we always need to perform for pre process the data and make them ready for modelling.
 
 1. Importing the libraries to use.
 2. Importing the datasets and defining the independant and dependant variables.
 3. Taking care of missing data.
 4. Encoding the categorical values (Converting the labels to numeric values to perform the calculations on them).
 5. Splitting the data into training and testing set.
-6. Feature scaling.
+6. Feature scaling (Not used all the time but based on the dataset it can be required).
+
+
+### Importing the libraries
+
+Let's see how to import libraries by importing some common livraries used for preprocessing and plotting the data.
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+```
+> numpy is used to perform array operations
+> pandas is used o import and perform actions on the datasets
+> matplotlib.pyplot is used to plot charts for data vizualization
