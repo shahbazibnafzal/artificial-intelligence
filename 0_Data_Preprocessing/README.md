@@ -54,3 +54,14 @@ X' = (X - mean) / standard deviation
 ```
 
 Each value in the column is calculated this way, so the values will be between -3 and 3 (Except outliers).
+
+## Data preprocessing template
+
+There are a few steps that we always need to perform.
+
+1. Importing the libraries to use.
+2. Importing the datasets and defining the independant and dependant variables.
+3. Taking care of missing data.
+4. Encoding the categorical values (Converting the labels to numeric values to perform the calculations on them).
+5. Splitting the data into training and testing set.
+6. Feature scaling.
