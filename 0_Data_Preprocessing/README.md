@@ -84,3 +84,18 @@ print(dataset) # This will print the dataset
 X = dataset.iloc[:, :-1].values # Storing all the values of independant variables
 Y = dataset.iloc[:, -1].values # Storing all the values of the dependant or target variable
 ```
+
+### Taking care of missing data
+
+There are several techniques of taking care of missing data in a dataset.
+
+1. Remove the records (If the dataset is huge and there are only a few records with missing data).
+2. Replace the missing value with the average (mean) / median / mode value.
+
+```python
+from sklearn.impute import SimpleImputer # Simple Imputer has alreadz built in functions to handle missing data
+imputer = SimpleImputer(missing_values=np.nan, strategy='mean') # Create an instance of simple imputer
+imputer.fit(X[:, 1:3]) # Fit the imputer to only numerical values, don't include categorical values
+X[:, 1:3] = imputer.transform(X[:, 1:3]) # Tranform and replace the values with the new values without missing data
+print(X)
+```
