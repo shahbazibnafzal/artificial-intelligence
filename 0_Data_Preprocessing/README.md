@@ -1,0 +1,56 @@
+# The Machine Learning Process
+
+## 3 main steps in the journey of data.
+
+1. Data Preprocessing
+
+   - Import the data
+   - Clean the data
+   - Split data into training and test sets
+
+2. Modelling
+
+   - Build the model
+   - Train the model
+   - Make prediction
+
+3. Evaluations
+   - Calculate performance metrics
+   - Make a verdict
+
+[Google collab link](https://colab.research.google.com/)
+
+## Importance of splitting the dataset into training and test set
+
+When we have a labeled data (historical data with result), we can split the data into training and test set.
+We train our model with the training set and make predection on the test set and then we compare the predicted results with the actual result of the test set to see how close our model is predicting.
+
+## Independant and dependant variables.
+
+**Independant variable (X):**
+The parameters (columns) of the records based on which the result is dependant are called as independant variables or features and are denoted with X.
+
+**Dependant variable (Y):**
+The value we want to predict based on different feaures or values are called dependant or target variables.
+
+## Feature Scaling
+
+Feature scaling is applied to independant variables (columns)
+
+There are two common fetaure scaling techniques:
+
+1. Normaliation
+
+```math
+X' = (X - X min) / (X max - X min)
+```
+
+Each value in the column is calculated this way, so the values will be between 0 and 1.
+
+2. Standardization
+
+```math
+X' = (X - avg) / standard deviation
+```
+
+Eacha value in the column is calculated this way, so the values will be between -3 and 3 (Except outliers).
