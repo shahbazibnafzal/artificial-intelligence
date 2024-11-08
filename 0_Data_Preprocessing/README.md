@@ -71,11 +71,14 @@ There are a few steps that we always need to perform for pre process the data an
 Let's see how to import libraries by importing some common livraries used for preprocessing and plotting the data.
 
 ```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np # Used to perform array operations.
+import pandas as pd # Used to import and perform actions on the datasets.
+import matplotlib.pyplot as plt # Used to plot charts for data vizualization.
 ```
 
-> 1. numpy is used to perform array operations.
-> 2. pandas is used to import and perform actions on the datasets.
-> 3. matplotlib.pyplot is used to plot charts for data vizualization.
+### Importing the dataset
+
+```python
+dataset = pd.read_csv("Data.csv") # Reading the csv file with pandas
+print(dataset) # This will print the dataset
+```
