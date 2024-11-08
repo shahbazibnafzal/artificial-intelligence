@@ -50,7 +50,7 @@ Each value in the column is calculated this way, so the values will be between 0
 2. Standardization
 
 ```math
-X' = (X - avg) / standard deviation
+X' = (X - mean) / standard-deviation
 ```
 
-Eacha value in the column is calculated this way, so the values will be between -3 and 3 (Except outliers).
+Each value in the column is calculated this way, so the values will be between -3 and 3 (Except outliers).
