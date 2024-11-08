@@ -76,7 +76,7 @@ import pandas as pd # Used to import and perform actions on the datasets.
 import matplotlib.pyplot as plt # Used to plot charts for data vizualization.
 ```
 
-### Importing the dataset and defining the dependent and independant variables
+### Importing the dataset and defining the dependant and independant variables
 
 ```python
 dataset = pd.read_csv("Data.csv") # Reading the csv file with pandas and storing it as a dataframe
@@ -96,5 +96,5 @@ There are several techniques of taking care of missing data in a dataset.
 from sklearn.impute import SimpleImputer # Simple Imputer has built in functions to handle missing data
 imputer = SimpleImputer(missing_values=np.nan, strategy='mean') # Create an instance of simple imputer
 imputer.fit(X[:, 1:3]) # Fit the imputer to only numerical values, don't include categorical values
-X[:, 1:3] = imputer.transform(X[:, 1:3]) # Transform and replace the values with the new values 
+X[:, 1:3] = imputer.transform(X[:, 1:3]) # Transform and replace the values with the new values
 ```
