@@ -66,7 +66,6 @@ There are a few steps that we always need to perform for pre process the data an
 5. Splitting the data into training and testing set.
 6. Feature scaling (Not used all the time but based on the dataset it can be required).
 
-
 ### Importing the libraries
 
 Let's see how to import libraries by importing some common livraries used for preprocessing and plotting the data.
@@ -74,8 +73,9 @@ Let's see how to import libraries by importing some common livraries used for pr
 ```python
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 ```
-> 1. numpy is used to perform array operations,
-> 2. pandas is used o import and perform actions on the datasets,
-> 3. matplotlib.pyplot is used to plot charts for data vizualization,
+
+> 1. numpy is used to perform array operations.
+> 2. pandas is used to import and perform actions on the datasets.
+> 3. matplotlib.pyplot is used to plot charts for data vizualization.
