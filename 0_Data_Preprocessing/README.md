@@ -84,6 +84,7 @@ print(dataset) # This will print the dataset
 X = dataset.iloc[:, :-1].values # Storing all the values of independant variables
 Y = dataset.iloc[:, -1].values # Storing all the values of the dependant or target variable
 ```
+
 ### Identifying the missing data
 
 ```python
@@ -103,4 +104,17 @@ from sklearn.impute import SimpleImputer # Simple Imputer has built in functions
 imputer = SimpleImputer(missing_values=np.nan, strategy='mean') # Create an instance of simple imputer
 imputer.fit(X[:, 1:3]) # Fit the imputer to only numerical values, don't include categorical values
 X[:, 1:3] = imputer.transform(X[:, 1:3]) # Transform and replace the values with the new values
+```
+
+### Encoding the categorical values
+
+Categorical values need to be convered to numeric values however we can't just assign some numeric values that that has order.
+We can use OneHotEncoder to create columns for each category and create binary values 0 or 1 for each column.
+
+```python
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
+X = np.array(ct.fit_transform(X))
 ```
