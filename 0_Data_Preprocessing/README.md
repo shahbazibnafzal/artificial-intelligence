@@ -109,6 +109,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3]) # Transform and replace the values with
 ### Encoding the categorical values
 
 **Encoding independant variables**
+
 Categorical values need to be convered to numeric values however we can't just assign some numeric values that has order.
 We can use OneHotEncoder to create columns for each category and create binary values 0 or 1 for each column.
 
