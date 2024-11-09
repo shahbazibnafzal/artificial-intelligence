@@ -108,6 +108,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3]) # Transform and replace the values with
 
 ### Encoding the categorical values
 
+**Encoding independant variables**
 Categorical values need to be convered to numeric values however we can't just assign some numeric values that has order.
 We can use OneHotEncoder to create columns for each category and create binary values 0 or 1 for each column.
 
@@ -117,4 +118,13 @@ from sklearn.preprocessing import OneHotEncoder
 
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
+```
+
+**Encoding dependant variables**
+
+```python
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+Y = le.fit_transform(Y)
+print(Y)
 ```
