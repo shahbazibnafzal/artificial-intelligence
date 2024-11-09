@@ -84,6 +84,12 @@ print(dataset) # This will print the dataset
 X = dataset.iloc[:, :-1].values # Storing all the values of independant variables
 Y = dataset.iloc[:, -1].values # Storing all the values of the dependant or target variable
 ```
+### Identifying the missing data
+
+```python
+dataset.isnull() # This will create a table with true and false value for the dataset. true indicates the missing data
+dataset.isnull().sum() # This will give the number of missing values in each column.
+```
 
 ### Taking care of missing data
 
