@@ -54,7 +54,7 @@ Each value in the column is calculated this way, so the values will be between 0
 Standardization works well most of the time.
 
 ```math
-X' = (X - mean) / standard deviation
+X' = (X - mean) / text{standard deviation}
 ```
 
 Each value in the column is calculated this way, so the values will be between -3 and 3 (Except outliers).

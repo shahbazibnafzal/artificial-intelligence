@@ -142,7 +142,7 @@ Basically we create mutiple folds of the dataset and then we iterate our process
 We learnt about ordinary least squared value where we calculate the minnimum sum of residual error and get the line of best fit.
 These errors are calculated in three ways.
 
-- Mean absolute error:
+- **Mean absolute error:**
   This calculates the average of the absolute errors (without squaring) between observed and predicted values.
 
   ```math
@@ -151,7 +151,7 @@ These errors are calculated in three ways.
 
   Useful when you want a measure less sensitive to outliers, as it doesn’t square the errors. MAE provides a direct average distance between predictions and actuals in the original units of the data.
 
-- Mean squared error
+- **Mean squared error**
   This is the average of the squared residuals between observed and predicted values.
 
   ```math
@@ -159,11 +159,11 @@ These errors are calculated in three ways.
   ```
   Common in regression analysis, MSE penalizes larger errors more heavily than smaller ones (because of squaring), making it sensitive to outliers. It’s popular because it’s easy to compute and differentiable, which aids in optimization.
 
-- Root mean squared error
+- **Root mean squared error**
   This is the square root of the MSE, providing a measure in the same units as the original data.
   
   ```math
   \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
   ``` 
-  
+
   RMSE is useful when you want the error in the same units as the target variable, making it more interpretable. Like MSE, it’s sensitive to outliers, as errors are squared before averaging.
