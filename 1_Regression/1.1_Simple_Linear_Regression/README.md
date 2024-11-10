@@ -30,7 +30,7 @@ residual = y_{i} − \hat{y}{i}
 m, c such that:
 
 ```math
-SUM(y_{i} - \hat{y}{i})
+SUM(y_{i} - \hat{y}_{i})
 ```
 
 is minimized
