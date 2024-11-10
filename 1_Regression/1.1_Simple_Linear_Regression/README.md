@@ -179,13 +179,13 @@ R^2 = 1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}
 
 where
 
-- SS_{res}(Residual Sum of Squares) is the sum of the squared differences between the observed and predicted values:
+- Residual Sum of Squares is the sum of the squared differences between the observed and predicted values:
 
 ```math
 \text{SS}_{\text{res}} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 ```
 
-- SS_{tot} (Total Sum of Squares) is the sum of the squared differences between the observed values and the mean of the observed values:
+- Total Sum of Squares is the sum of the squared differences between the observed values and the mean of the observed values:
 
 ```math
 \text{SS}_{\text{tot}} = \sum_{i=1}^{n} (y_i - \bar{y})^2
