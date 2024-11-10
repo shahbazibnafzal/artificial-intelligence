@@ -89,6 +89,7 @@ plt.ylabel("Salary")
 plt.xlabel("Expeience")
 plt.show()
 ```
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/efe7b980-5eab-482f-bf02-41bd1a132486">
 
 ### Visualizing the test set result
 
@@ -100,3 +101,4 @@ plt.ylabel("Salary")
 plt.xlabel("Expeience")
 plt.show()
 ```
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/b40ae7cc-a2f1-4dd9-8a60-b8c249645fa1">
