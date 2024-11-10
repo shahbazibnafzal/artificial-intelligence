@@ -39,7 +39,9 @@ Feature scaling is applied to independant variables (columns)
 
 There are two common fetaure scaling techniques:
 
-1. Normaliation
+**1. Normaliation**
+
+Normalization works well when the there is a normal data distribution.
 
 ```math
 X' = (X - X min) / (X max - X min)
@@ -47,7 +49,9 @@ X' = (X - X min) / (X max - X min)
 
 Each value in the column is calculated this way, so the values will be between 0 and 1.
 
-2. Standardization
+**2. Standardization**
+
+Standardization works well most of the time.
 
 ```math
 X' = (X - mean) / standard deviation
@@ -128,4 +132,24 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 Y = le.fit_transform(Y)
 print(Y)
+```
+
+### Splitting the data into training and test set
+
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
+```
+
+### Feature scaling
+
+We need to scale all the features so that they are on the same scale and thus one fetaure doesn't domainate the other feature. (Not required for all the ML models though)
+
+Don't apply feature scaling to the dummy variables (encoded catregorical variables)
+
+```python
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+X_test[:, 3:] = sc.transform(X_test[:, 3:])
 ```
