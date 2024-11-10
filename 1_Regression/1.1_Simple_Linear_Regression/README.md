@@ -52,3 +52,51 @@ dataset = read_csv("Salary_Data.csv")
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, -1].values
 ```
+### Check null values
+
+```python
+dataset.isnull().sum()
+```
+
+### Splitting the dataset in training and test set
+
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
+```
+
+### Training the simple linear regression model on training set
+
+```python
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, Y_train)
+```
+
+### Predict the test set result
+
+```python
+Y_pred = regressor.predict(X_test)
+```
+
+### Visualizing the training set result
+
+```python
+plt.scatter(X_train, Y_train, color="red")
+plt.plot(X_train, regressor.predict(X_train), color="blue")
+plt.title("Salary vs Experience (training set)")
+plt.ylabel("Salary")
+plt.xlabel("Expeience")
+plt.show()
+```
+
+### Visualizing the test set result
+
+```python
+plt.scatter(X_test, Y_test, color="red")
+plt.plot(X_train, regressor.predict(X_train), color="blue")
+plt.title("Salary vs Experience (test set)")
+plt.ylabel("Salary")
+plt.xlabel("Expeience")
+plt.show()
+```
