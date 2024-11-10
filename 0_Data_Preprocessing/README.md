@@ -44,7 +44,7 @@ There are two common fetaure scaling techniques:
 Normalization works well when the there is a normal data distribution.
 
 ```math
-X' = (X - X min) / (X max - X min)
+X' = (X - X_{min}) / (X_{max} - X_{min})
 ```
 
 Each value in the column is calculated this way, so the values will be between 0 and 1.
