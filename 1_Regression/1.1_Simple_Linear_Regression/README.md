@@ -5,7 +5,7 @@ Simple linar regression is applied to predict a continuous value when it is depe
 **Equation:**
 
 ```math
-y = b(0) + b(1)X 
+y = b_{0} + b_{1}X
 ```
 
 > y = dependant variable,
@@ -20,12 +20,12 @@ The equation is for a simple line.
 We calculate the ordinary least squared value and for that we calculate the residual for each datapoint in the lines and get the sum of all the residual. The line for which the sum of square of residuals is minnimum, is called the line of best fit.
 
 ```math
-residual=y(i)− y^(i)
+residual = y_{i} − \hat{y}{i}
 ```
 
 ```math
-y^ = b(0) + b(1)X(1)
+\hat{y} = b_{0} + b_{0}X_{1}
 
 m, c sunch that:
-SUM(y(i) - y(i)^) is minimized
+SUM(y_{i} - \hat{y}{i}) is minimized
 ```
