@@ -8,7 +8,7 @@ Simple linar regression is applied to predict a continuous value when it is depe
 y = mx + c
 ```
 
-> y = dependant variable
-> x = independant variable
-> m = slope
+> y = dependant variable,
+> x = independant variable,
+> m = slope,
 > c = intercept
