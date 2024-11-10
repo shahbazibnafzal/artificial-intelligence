@@ -20,7 +20,7 @@ The equation is for a simple line.
 We calculate the ordinary least squared value and for that we calculate the residual for each datapoint in the lines and get the sum of all the residual. The line for which the sum of square of residuals is minnimum, is called the line of best fit.
 
 ```math
-residual = y(i) - y(i)^
+residual=y(i)− y^(i)
 ```
 
 ```math
