@@ -53,10 +53,13 @@ X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, -1].values
 ```
 
-### Check null values
+### Exploratory analysis
 
 ```python
-dataset.isnull().sum()
+dataset.isnull().sum()  # Check the missing data
+dataset.describe()  # Check the summary of data
+dataset.head() # Check the head (first 5 records) of the dataset
+dataset.head(9) # Check the first 9 records
 ```
 
 ### Splitting the dataset in training and test set
@@ -190,4 +193,6 @@ where
 ```math
 \text{SS}_{\text{tot}} = \sum_{i=1}^{n} (y_i - \bar{y})^2
 ```
+
+> R-squared value is between 0 and 1. 1 is perfectly accurate and 0 is perfectly inacuurate.
 
