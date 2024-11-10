@@ -102,3 +102,24 @@ plt.xlabel("Expeience")
 plt.show()
 ```
 <img width="397" alt="image" src="https://github.com/user-attachments/assets/b40ae7cc-a2f1-4dd9-8a60-b8c249645fa1">
+
+## Model evaluation
+
+Two common model evaluation techniques are:
+
+**1. Train and test on the same dataset:**
+Here we don't split the dataset while training the model, rather train on the entire dataset and the test on a portion of the data.
+
+**2. Train/Test split:**
+Here we split our dataset into training and test set. We train our model on the training set with labeled data and predict the test set and then compare the predicted values with the labels of test set.
+
+**Training Accuracy**
+Percentage of correct prediction made on the test set of the model on which the data has been trained on.
+- Training and testing on the same dataset produces a hgh training accuracy but that's not necessarly a good thing.
+- It will produce correct output for the data that it has already been trained on but might produce wrong output for new data which is called overfitting.
+
+> Overfitting: If a model is overly trained to the dataset, it may capture noise and produce a non-generalized model.
+
+**Out of sample accuracy**
+Percentage of correct predictions model make on the data that the model has not been trained on.
+- High out of sample accuracy is desired. 
