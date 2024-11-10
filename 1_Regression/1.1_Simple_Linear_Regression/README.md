@@ -25,7 +25,12 @@ residual = y_{i} − \hat{y}{i}
 
 ```math
 \hat{y} = b_{0} + b_{0}X_{1}
-
-m, c sunch that:
-SUM(y_{i} - \hat{y}{i}) is minimized
 ```
+
+m, c such that:
+
+```math
+SUM(y_{i} - \hat{y}{i})
+```
+
+is minimized
