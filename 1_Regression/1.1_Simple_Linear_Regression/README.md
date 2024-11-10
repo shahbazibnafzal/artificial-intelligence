@@ -1,6 +1,6 @@
 # Simple Linear Regression
 
-Simple linar regression is applied to predict a continuous value when it is dependant on a single variable.
+Simple linar regression is applied to predict a continuous value when it is dependant on a single variable and the relation between the two variables is linear.
 
 **Equation:**
 
@@ -33,4 +33,22 @@ m, c such that:
 SUM(y_{i} - \hat{y}_{i})
 ```
 
-is minimized
+is minimized.
+
+## Applying simple linear regression to Salary_Data.csv dataset to predict the salary of an employee.
+
+### Importing the libraries
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+### Importing the dataset
+
+```python
+dataset = read_csv("Salary_Data.csv")
+X = dataset.iloc[:, :-1].values
+Y = dataset.iloc[:, -1].values
+```
