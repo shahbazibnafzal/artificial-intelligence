@@ -167,3 +167,27 @@ These errors are calculated in three ways.
   ``` 
 
   RMSE is useful when you want the error in the same units as the target variable, making it more interpretable. Like MSE, it’s sensitive to outliers, as errors are squared before averaging.
+
+  The **R-squared (R²)** value, also known as the **coefficient of determination**, is a statistical measure used to assess how well a regression model fits the data. It shows the proportion of the variance in the dependent variable \( y \) that can be explained by the independent variable(s) \( X \) in the model.
+
+### R-squared value
+The R-squared value is calculated as:
+
+```math
+R^2 = 1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}
+```
+
+where
+
+- SS_{res}(Residual Sum of Squares) is the sum of the squared differences between the observed and predicted values:
+
+```math
+\text{SS}_{\text{res}} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+```
+
+- SS_{tot} (Total Sum of Squares) is the sum of the squared differences between the observed values and the mean of the observed values:
+
+```math
+\text{SS}_{\text{tot}} = \sum_{i=1}^{n} (y_i - \bar{y})^2
+```
+
