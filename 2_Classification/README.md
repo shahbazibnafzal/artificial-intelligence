@@ -13,6 +13,8 @@
 
 ## Evaluation metrics in classification
 
+
+
 We train the data on training set and then make prediction on the test data.
 
 So we have predicted and actual value of the test set. We can compare those to evaluate the accuracy of the model.
@@ -30,6 +32,8 @@ J(y, \hat{y}) = \frac{|A \cap \hat{y}|}{|A \cup \hat{y}|}
 ```
 
 **2. Confusion matrix (F1-score):**
+
+![confusion matrix](https://github.com/user-attachments/assets/bfec8e2b-6b2e-40af-b728-caf2357eace3)
 
 We can create a confusion marix with actual and predicted value.
 
