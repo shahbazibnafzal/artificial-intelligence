@@ -28,3 +28,22 @@ Jacob index is the size of the intersection of the actual and predicted values d
 ```math
 J(y, \hat{y}) = \frac{|A \cap \hat{y}|}{|A \cup \hat{y}|}
 ```
+
+**2. Confusion matrix (F1-score):**
+
+We can create a confusion marix with actual and predicted value.
+
+TP = True positive: Correctly predicted the true value for a binary classification.
+TN = True negative: Correctly predicted the false value for a binary classification.
+FP = False positive: Incorrectly predicted the true value for a binary classification.
+FN = False negative: Incorrectly predicted the false value for a binary classification.
+
+Precision = TP / (TP + FP)
+
+Recall = TP / (TP + FN)
+
+F1 score = 2 * (precision * recall) / (precision + recall)
+
+F1: 1 is best, 0 is worst.
+
+**3. Log loss:**
