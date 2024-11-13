@@ -26,6 +26,5 @@ y: Actual labels
 Jacob index is the size of the intersection of the actual and predicted values divided by union of actual and predicted values.
 
 ```math
-J(y, \hat{y}) = |y |
 J(y, \hat{y}) = \frac{|A \cap \hat{y}|}{|A \cup \hat{y}|}
 ```
